@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Made by CSF & CTIS studnets(2nd year)</title>
+    <title>Simpson's Rule Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2 style="color: #2d3436; text-align: center; margin-bottom: 20px;">
+            Simpson's Rule Calculator
+        </h2>
+        
+        <div class="input-group">
+            <label for="a">Lower Limit (a):</label>
+            <input type="number" id="a" step="any" required>
+        </div>
+
+        <div class="input-group">
+            <label for="b">Upper Limit (b):</label>
+            <input type="number" id="b" step="any" required>
+        </div>
+
+        <div class="input-group">
+            <label for="n">Number of Strips (n):</label>
+            <input type="number" id="n" required>
+        </div>
+
+        <div class="input-group">
+            <label for="function">Function (in terms of x):</label>
+            <input type="text" id="function" required>
+        </div>
+
+        <button onclick="calculateSimpsonsRule()">Calculate</button>
+
+        <div class="result" id="result">
+            <h3>Result:</h3>
+            <div id="detailedSteps"></div>
+        </div>
+       <!-- Footer -->
+<footer class="Simpsons-footer">
+    <p>MADE BY STUDENTS OF 2ND year</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>PRN</th>
+                <th>Roll No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>D. GOPICHAND(cSF)</td>
+                <td>230105181015</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>TS VISHNU VARDHAN(CSF)</td>
+                <td>230105231097</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>KUDUMIYIL AKSHAY SHIBU(CSF)</td>
+                <td>230105231099</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>NARIPEDDI MANIKANTA(CTIS)</td>
+                <td>230105121022</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>© 2025 DGC @ Powered by SUN students</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
