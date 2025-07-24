@@ -1,27 +1,34 @@
 body {
-    font-family: 'Arial', sans-serif;
-    max-width: 800px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    min-height: 100vh;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+h2 {
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px #ffccbc;
+    font-size: 2.8em;
 }
 
 .calculator {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1),
-                inset 0 0 15px rgba(255,255,255,0.3);
-    border: 1px solid rgba(255,255,255,0.3);
-    backdrop-filter: blur(5px);
-    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+    /* Removed red border */
+    border: none;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
 }
 
 .calculator:hover {
-    border: 1px solid rgba(107, 114, 218, 0.5);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2),
-                inset 0 0 15px rgba(107, 114, 218, 0.2);
+    box-shadow: 0 8px 24px rgba(255, 87, 34, 0.5);
 }
 
 .input-group {
@@ -160,4 +167,92 @@ th {
 footer {
     text-align: center;
     margin-top: 20px;
+}
+
+.Simpsons-footer {
+    background-color: #2d3436;
+    color: #f1f1f1;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.Simpsons-footer .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.Simpsons-footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.Simpsons-footer .footer-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+    font-style: italic;
+}
+
+.Simpsons-footer .footer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Simpsons-footer .footer-table th,
+.Simpsons-footer .footer-table td {
+    border: 1px solid #4CAF50;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.Simpsons-footer .footer-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Simpsons-footer .footer-table tbody tr {
+    background-color: #3a3f47;
+    transition: background-color 0.3s ease;
+}
+
+.Simpsons-footer .footer-table tbody tr:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Simpsons-footer .footer-table tbody tr:hover td {
+    color: #fff;
+}
+
+.Simpsons-footer .footer-table tbody tr:nth-child(even) {
+    background-color: #2d3436;
+}
+
+.Simpsons-footer .footer-table tbody tr:nth-child(odd) {
+    background-color: #3a3f47;
+}
+
+.Simpsons-footer .footer-table tbody tr td {
+    font-weight: 400;
+    color: #d1d1d1;
+}
+
+.Simpsons-footer .footer-copyright {
+    font-size: 0.9em;
+    color: #7a7a7a;
+    font-style: italic;
 }
