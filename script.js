@@ -50,7 +50,7 @@ function calculateSimpsonsRule() {
                 <p>x${i} = ${x.toFixed(4)}</p>
                 <p>f(x${i}) = ${y.toFixed(4)}</p>
                 <p>Coefficient: ${coefficient}</p>
-                <p>Contribution: ${coefficient * y.toFixed(4)}</p>
+        <p>Contribution: ${(coefficient * y).toFixed(4)}</p>
                 <hr>
             </div>
         `;
